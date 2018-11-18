@@ -1,53 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-// class Nav extends Component {
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {isToggleOn: true};
-
-//     // This binding is necessary to make `this` work in the callback
-//     this.handleClick = this.handleClick.bind(this);
-//   }
-
-//   handleClick() {
-//     this.setState(state => ({
-//       isToggleOn: !state.isToggleOn,
-//       state: 'menu'
-//     }));
-//   }
-
-//   render() {
-
-//     return (
-
-//       <nav className="navbar-dark navbar-default navbar-expand-lg bg-dark">
-//           <div id="top-menu" className="top-menu navbar-collapse collapse global-navigation">
-//             <ul id="menu-top-menu" className="nav navbar-nav">
-//               <li onClick={this.handleClick}  className="menu-item"><a href="#">Home</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/about-us/">About Us</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/industrial/">Industrial</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/residential/">Residential</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/projects/">Projects</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/free-quote/">Free Quote</a></li>
-//               <li  className="menu-item"><a href="https://www.perthscaffolding.com.au/contact-us/">Contact Us</a></li>
-//             </ul>
-//           </div>  
-//       </nav>
-//     );
-//   }
-// }
-
-
 function Nav () {
 
   return (
     <Router>
       <div>
-      <nav className="navbar-dark navbar-default navbar-expand-lg bg-dark">
-          <div id="top-menu" className="top-menu navbar-collapse collapse global-navigation">
-            <ul id="menu-top-menu" className="nav navbar-nav">
+        <nav className="nav navbar-expand-lg navbar-light bg-light">
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav mr-auto">
               <li  className="menu-item">
                 <Link to="/">Home</Link>
               </li>
@@ -71,15 +32,15 @@ function Nav () {
               </li>
             </ul>
           </div>  
-      </nav>
+        </nav>
 
-       <Route exact path="/" component={Home} />
-       <Route exact path="/about-us" component={AboutUs}/>
-       <Route exact path="/industrial" component={Industrial} />
-       <Route exact path="/residential" component={Residential} />
-       <Route exact path="/projects" component={Projects} />
-       <Route exact path="/free-quote" component={FreeQuote} />
-       <Route exact path="/contact-us" component={ContactUs} />
+         <Route exact path="/" component={Home} />
+         <Route exact path="/about-us" component={AboutUs}/>
+         <Route exact path="/industrial" component={Industrial} />
+         <Route exact path="/residential" component={Residential} />
+         <Route exact path="/projects" component={Projects} />
+         <Route exact path="/free-quote" component={FreeQuote} />
+         <Route exact path="/contact-us" component={ContactUs} />
        </div>
     </Router>
   )
