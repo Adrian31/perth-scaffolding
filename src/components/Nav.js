@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -5,30 +6,30 @@ function Nav () {
 
   return (
     <Router>
-      <div>
-        <nav className="nav navbar-expand-lg navbar-light bg-light">
+      <div> 
+        <nav className="navbar navbar-expand-lg navbar-light text-center">
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
-              <li  className="menu-item">
-                <Link to="/">Home</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/">Home</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/about-us">About Us</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/about-us">About Us</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/industrial">Industrial</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/industrial">Industrial</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/residential">Residential</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/residential">Residential</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/projects">Projects</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/projects">Projects</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/free-quote">Free Quote</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/free-quote">Free Quote</Link>
               </li>
-              <li  className="menu-item">
-                <Link to="/contact-us">Contact Us</Link>
+              <li  className="nav-item menu-item">
+                <Link className="nav-link" to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>  
@@ -48,47 +49,47 @@ function Nav () {
 
 function Home() {
   return (
-    <div> hi </div>
+    <div className="container"> hi </div>
   );
 }
 function AboutUs() {
   return (
-    <div>
+    <div className="container">
       <h2>About</h2>
     </div>
   );
 }
 function Industrial() {
   return (
-    <div>
+    <div className="container">
       <h2>Industrial</h2>
     </div>
   );
 }
 function Residential() {
   return (
-    <div>
+    <div className="container">
       <h2>Residential</h2>
     </div>
   );
 }
 function Projects() {
   return (
-    <div>
+    <div className="container">
       <h2>Projects</h2>
     </div>
   );
 }
 function FreeQuote() {
   return (
-    <div>
+    <div className="container">
       <h2>Free Quote</h2>
     </div>
   );
 }
 function ContactUs() {
   return (
-    <div>
+    <div className="container">
       <h2>Contact Us</h2>
     </div>
   );
