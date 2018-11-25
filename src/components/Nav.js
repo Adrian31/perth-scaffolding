@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import Slider from './Slider.js';
 function Nav () {
 
   return (
@@ -56,6 +56,7 @@ function AboutUs() {
   return (
     <div className="container">
       <h2>About</h2>
+      <div><Slider></Slider></div>
     </div>
   );
 }
