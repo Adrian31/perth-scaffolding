@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+// import NavLink from "./nav_link";
 import Home from '../components/Home.js';
 function Nav () {
 
@@ -8,28 +9,28 @@ function Nav () {
     <Router>
       <div> 
         <nav className="navbar navbar-expand-lg navbar-light text-center">
-          <div className="collapse navbar-collapse">
+          <div className="navbar-collapse">
             <ul className="navbar-nav mr-auto">
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <NavLink className="nav-link" to="/" activeClassName="selected" >Home</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/about-us">About Us</Link>
+                <NavLink className="nav-link" to="/about-us" activeClassName="selected" >About Us</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/industrial">Industrial</Link>
+                <NavLink className="nav-link" to="/industrial" activeClassName="selected" >Industrial</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/residential">Residential</Link>
+                <NavLink className="nav-link" to="/residential" activeClassName="selected" >Residential</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/projects">Projects</Link>
+                <NavLink className="nav-link" to="/projects" activeClassName="selected" >Projects</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/free-quote">Free Quote</Link>
+                <NavLink className="nav-link" to="/free-quote" activeClassName="selected" >Free Quote</NavLink>
               </li>
               <li  className="nav-item menu-item">
-                <Link className="nav-link" to="/contact-us">Contact Us</Link>
+                <NavLink className="nav-link" to="/contact-us" activeClassName="selected" >Contact Us</NavLink>
               </li>
             </ul>
           </div>  
